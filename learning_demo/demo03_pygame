@@ -1,0 +1,16 @@
+import pygame
+
+pygame.init()
+print("游戏开始。。。")
+
+# 创建游戏窗口
+screen = pygame.display.set_mode((480, 700))
+tank_model = pygame.Rect(200, 400, 60, 60)
+print("tank的位置%d %d" % (tank_model.x, tank_model.y))
+print("tank的大小%d %d" % (tank_model.width, tank_model.height))
+print("tank的大小%d %d" % tank_model.size)
+
+while True:
+    pass
+
+pygame.quit()

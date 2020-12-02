@@ -1,0 +1,9 @@
+import requests
+
+response = requests.get("https://keppel.fun")
+print(response.content)
+
+
+name_list = ["zhangsan", "lisi", "wangwu"]
+name_list.append("zhaoliu")
+print(name_list)

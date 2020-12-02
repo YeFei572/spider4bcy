@@ -29,7 +29,7 @@ class downloader(object):
             startAt += datetime.timedelta(days=1)
             date = startAt.strftime('%Y%m%d')
             req = requests.get(url=self.top+'&date='+date)
-            bf = BeautifulSoup(req.text)
+            bf = BeautifulSoup(req.text, "html.parser")
             texts = bf.find_all('a', class_='db posr ovf')
             for each in texts:
                 print(each)
